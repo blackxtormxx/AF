@@ -1,0 +1,27 @@
+.global-container{
+                background-image: url("9fd5fe26ac6aeb0df0f9810d1d7cd9d1");
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .global-container3{
+                background-image: url("9fd5fe26ac6aeb0df0f9810d1d7cd9d1");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .ck-editor__editable {
+                min-height: 500px;
+            }
+
+            .global-container2{
+                background: linear-gradient(to bottom, #b0ebe3, #ffffff);
+            }
+
+            .login-form{ 
+                width:430px;
+                margin:20px;
+            }

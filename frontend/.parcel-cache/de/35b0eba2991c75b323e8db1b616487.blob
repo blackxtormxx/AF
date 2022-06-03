@@ -1,0 +1,5 @@
+module.exports = require("./loaders/browser/js-loader")(require('./bundle-url').getBundleURL() + "canvg.HASH_REF_c7014d2817ea3f67f7ef09a1d1d5e0e1.js").catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root('21Mu2')
+);
