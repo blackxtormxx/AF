@@ -9,18 +9,18 @@ import '../src/style.css';
 function   PanelStudentGroup() {
  
   const username = Cookies.get('user_name');
+
   const [AllTeams,setAllTeams] = useState([]);
  
    
   const [panelData,setPanelData] = useState([]);
   useEffect(() => {
-      axios.get("http://localhost:5000/staff/allTeamForPanel/oshan@Gmail.com")
+      axios.get("http://localhost:5000/staff/allTeamForPanel/"+Cookies.get('user_name'))
       .then(res => setPanelData(res.data))
       .catch(error => console.log(error));
   });
-
   function updateTopic(id,topicStatus){
-   
+        
         const updateTopic ={id,topicStatus}
         axios.put("http://localhost:5000/team/updateTopic",updateTopic).then(() =>{
             Swal.fire({  

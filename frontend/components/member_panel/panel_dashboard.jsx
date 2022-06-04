@@ -2,11 +2,12 @@ import React ,{useState , useEffect} from "react";
 import HomePageNav from '../navbars/afterLogin';
 import Footer from '../footer/footer';
 import '../src/style.css';
+import Cookies from 'js-cookie';
 
 function PanelDashboard() {
 
   function topicEvolution(){
-    window.location.href = "/panel/PanelStudentGroup";
+    window.location.href = "/panel/PanelStudentGroup?id="+Cookies.get('user_name');
   }
 
   function presentationEvolution(){
