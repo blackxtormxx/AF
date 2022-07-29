@@ -16,7 +16,7 @@ const system_group_reg_Schema = new Schema({
     mem_two_regNum: {type: String, required: true},
     mem_two_specialize: {type: String, required: true},
 
-    
+
     mem_three_name: {type: String,required: true},
     mem_three_tel: {type: String,required: true},
     mem_three_email: {type: String, required: true},
@@ -24,6 +24,9 @@ const system_group_reg_Schema = new Schema({
     mem_three_specialize: {type: String, required: true},
 
 
+
+
+    
     mem_four_name: {type: String,required: true},
     mem_four_tel: {type: String,required: true},
     mem_four_email: {type: String, required: true},
