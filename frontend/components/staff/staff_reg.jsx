@@ -75,7 +75,7 @@ function TeamDashboard() {
     function submit(e){
         e.preventDefault();
         const eductions = Qualifications.toString();
-        const staffReg ={password, name, email, tel, fax, eductions, userType,Specialize}
+        const staffReg ={password, name, email, tel}
     
           axios.post("http://localhost:5000/staff/staff_registration",staffReg).then(() =>{
     
@@ -110,7 +110,7 @@ function TeamDashboard() {
                     <div class="row bg-light rounded p-4">
                         <center>
                             <h4 class="card-title text-center pt-5 pb-2  text-uppercase text-dark">
-                                   Staff Registration
+                                   User Registration
                             </h4>
                         </center>
                         <div class="col-sm-12 mb-4">
@@ -123,19 +123,9 @@ function TeamDashboard() {
                                         }}/>
                                     </div>
                                 </div> 
-                                <div class="col-sm-4">
-                                    <div class="mb-3 text-start mt-4">
-                                        <label  class="form-label" style={{lineHeight:0}}>Staff Type</label>
-                                        <select type="text" class="form-select"  onChange={(e) =>{
-                                            setStaffType(e.target.value);
-                                        }} >
-                                            <option value="">Select Staff Type</option>
-                                            <option value="Supervisor">Supervisor</option>
-                                            <option value="Co-Supervisor">Co-Supervisor</option>
-                                            <option value="Panel Member">Panel Member</option>
-                                        </select>
-                                    </div>
-                                </div> 
+
+                                
+                                 
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -155,31 +145,10 @@ function TeamDashboard() {
                                         }}/>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="mb-3 text-start mt-4">
-                                        <label  class="form-label" style={{lineHeight:0}}>Fax Number</label>
-                                        <NumberFormat  format="##########"  class="form-control" onChange={(e) =>{
-                                            setFax(e.target.value);
-                                        }}/>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="mb-3 text-start mt-4">
-                                        <label  class="form-label" style={{lineHeight:0}}>Specialize For</label>
-                                        <select type="text" class="form-select"  onChange={(e) =>{
-                                            setSpecialize(e.target.value);
-                                        }}>
-                                            <option value="">Select Specialize For</option>
-                                            <option value="Machine Learning">Machine Learning</option>
-                                            <option value="Web Technology">Web Technology</option>
-                                            <option value="Networking">Networking</option>
-                                            <option value="Cryptography">Cryptography</option>
-                                            <option value="IOT">IOT</option>
-                                            <option value="Cyber Security">Cyber Security</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                
+                               
                             </div>
+                            
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="mb-3 text-start mt-4">
@@ -200,19 +169,7 @@ function TeamDashboard() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="mb-3 text-start mt-4">
-                                    <label  class="form-label" style={{lineHeight:0}}>Qualifications</label>
-                                    <CKEditor
-                                        editor={ ClassicEditor }
-                                        data=""
-                                        onChange={(event, editor) =>{
-                                        const data = editor.getData();
-                                        setQualifications(data);
-                                        }}
-                                    />
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="col-sm-12 mb-4">
                                 <div class="mb-3 text-end ">
