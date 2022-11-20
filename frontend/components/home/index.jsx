@@ -9,6 +9,13 @@ function Index() {
        <img src="https://i.imgur.com/3E03VNY.jpeg" class="img-fluid" width="100%" alt="..."></img>
        <div className="bg-black  pt-3 pb-3 ps-5 pe-5">
            <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+
        </div>
     </div>
   );
