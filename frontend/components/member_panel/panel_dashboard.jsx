@@ -32,12 +32,17 @@ function PanelDashboard()
                 <div class="container">
                     <div class="row bg-light rounded p-4">
                         <center>
+
+
+
+
+                          
                             <h2 class="card-title text-center pt-5 pb-2  text-uppercase text-dark">
                             Panel DASHBOARD
                             </h2>
                         </center>
-  
-                       
+
+
                         <div class="col-sm-4 mb-4 mt-4">
                           <div class="card" >
                             <img src="https://eitrawmaterials.eu/wp-content/uploads/2019/05/Label-brochure-1.jpg" style={{ width: '100%',height: '15vw',objectFit: 'cover'}} class="card-img-top" alt="..."/>
