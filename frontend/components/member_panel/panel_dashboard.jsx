@@ -4,19 +4,25 @@ import Footer from '../footer/footer';
 import '../src/style.css';
 import Cookies from 'js-cookie';
 
-function PanelDashboard() {
+function PanelDashboard() 
+{
 
   function topicEvolution(){
     window.location.href = "/panel/PanelStudentGroup?id="+Cookies.get('user_name');
   }
 
+
   function presentationEvolution(){
     window.location.href = "/panel/PresentationEvolution";
   }
 
+
+
   function PanelViewMarkingSchema(){
     window.location.href = "/panel/PanelViewMarkingSchema";
   }
+
+
 
   return (
     <div >
@@ -30,6 +36,7 @@ function PanelDashboard() {
                             Panel DASHBOARD
                             </h2>
                         </center>
+  
                        
                         <div class="col-sm-4 mb-4 mt-4">
                           <div class="card" >
