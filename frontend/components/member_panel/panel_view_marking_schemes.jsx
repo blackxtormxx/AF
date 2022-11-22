@@ -9,6 +9,9 @@ function ViewMarkingschemes() {
     const [all_MarkingSchema,setAllMarkingSchema] = useState([]);
    
 
+
+    
+
     useEffect(() => {
         axios.get("http://localhost:5000/markingSchemes/AllMarkingSchema")
         .then(res => setAllMarkingSchema(res.data))
