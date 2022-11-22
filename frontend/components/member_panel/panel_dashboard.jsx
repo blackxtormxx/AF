@@ -26,17 +26,13 @@ function PanelDashboard()
 
   return (
     <div >
-      
+
        <HomePageNav/>
        <div class="global-container3"  style={{paddingTop:'5%', paddingBottom:'5%'}}>
             <center>
                 <div class="container">
                     <div class="row bg-light rounded p-4">
                         <center>
-
-
-
-
 
                             <h2 class="card-title text-center pt-5 pb-2  text-uppercase text-dark">
                             Panel DASHBOARD
