@@ -45,7 +45,7 @@ function TeamDashboard() {
 
 
 
-            
+
             }).catch((err)=>{
 
                 Swal.fire({  
@@ -55,6 +55,9 @@ function TeamDashboard() {
                 confirmButtonText: "OK",
                 type: "success"})
             })
+
+
+            
     }
 
     function deleteStaff(id){
