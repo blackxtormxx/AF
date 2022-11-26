@@ -12,17 +12,18 @@ const staffSchema = new Schema({
         required: true,
     },
 
+
     email: {
         type: String,
         required: true,
     },
     
+
     tel: {
         type: String,
         required: true,
     },
-
-        
+    
     fax: {
         type: String,
         required: true,
